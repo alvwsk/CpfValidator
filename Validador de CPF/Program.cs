@@ -4,10 +4,17 @@ Console.Write("Enter a CPF in the format (xxx.xxx.xxx-xx): ");
 string? cpfInput = Console.ReadLine();
 
 
-//static bool IsCnpjValid(string? cnpj)
-//{
+static bool IsCnpjValid(string? cnpj)
+{
+    if (string.IsNullOrWhiteSpace(cnpj))
+    {
+        Console.WriteLine("Invalid CNPJ!");
+        return false;
+    }
 
-//}
+
+    return true;
+}
 
 static bool IsCpfValid(string? cpf)
 {
