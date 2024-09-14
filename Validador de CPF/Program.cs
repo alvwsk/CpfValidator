@@ -3,7 +3,13 @@
 Console.Write("Enter a CPF in the format (xxx.xxx.xxx-xx): ");
 string? cpfInput = Console.ReadLine();
 
-bool IsCpfValid(string cpf)
+
+//static bool IsCnpjValid(string? cnpj)
+//{
+
+//}
+
+static bool IsCpfValid(string? cpf)
 {
     if (string.IsNullOrWhiteSpace(cpf))
     {
